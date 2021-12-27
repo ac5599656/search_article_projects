@@ -1,3 +1,13 @@
+<?php
+
+$db_host = "xxxxx";
+$db_name = "xxxxx";
+$db_user = "xxxx";
+$db_pass = "xxxxxxxxx"
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
