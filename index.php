@@ -22,10 +22,12 @@ $db_pass = "xxxxxxxxx"
     </header>   
     <main>
         <ul>
-            <article>
-                <h2><?= $article['title']; ?></h2>
-                <p><?= $article['content']; ?></p>
-           </article>    
+            <?php foreach ($articles as $article): ?>
+                <article>
+                    <h2><?= $article['title']; ?></h2>
+                    <p><?= $article['content']; ?></p>
+                </article>    
+            <?php endforeach; ?>
        </ul>
    </main>
 
