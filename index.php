@@ -20,5 +20,8 @@ $db_pass = "xxxxxxxxx"
     <header>
         <h1>Anne's Blog</h1>
     </header>   
+    <main>
+   </main>
+
 </body>
 </html>
