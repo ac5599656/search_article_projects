@@ -22,6 +22,10 @@ $db_pass = "xxxxxxxxx"
     </header>   
     <main>
         <ul>
+            <article>
+                <h2><?= $article['title']; ?></h2>
+                <p><?= $article['content']; ?></p>
+           </article>    
        </ul>
    </main>
 
