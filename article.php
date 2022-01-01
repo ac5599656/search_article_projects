@@ -40,7 +40,7 @@ if($results === false) {
         <h1>Anne's Blog</h1>
     </header>   
     <main>
-        <?php if (empty($articles)): ?>
+        <?php if ($article === null): ?>
             <p>No articles found.</p>
         <?php else: ?>
         
