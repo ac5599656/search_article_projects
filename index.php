@@ -23,7 +23,6 @@ if($results === false) {
 } else {
     $articles = mysqli_fetch_all($results, MYSQLI_ASSOC)
 
-    var_dump($articles);
 }
 
 ?>
