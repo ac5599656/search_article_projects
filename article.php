@@ -11,10 +11,10 @@ if(mysqli_connect_error()){
     echo mysqli_connect_error();
     exit;
 }
-
-$sql = "SELECT *
-         FROM article
-         WHERE id = ". $_GET['id'];
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+    $sql = "SELECT *
+        FROM article
+        WHERE id = ". $_GET['id'];
 
 $results = mysqli_query($conn, $sql);
 
@@ -23,6 +23,10 @@ if($results === false) {
 } else {
     $articles = mysqli_fetch_assoc($results)
 
+}
+
+} else {
+    $article = null;
 }
 
 ?>
